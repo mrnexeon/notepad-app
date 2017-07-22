@@ -3,22 +3,23 @@
 <title>Все записи</title>
 
 <link rel="stylesheet" href="css/style.css"> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+<link href="https://file.myfontastic.com/SnzJgoZRVpchabZce3KRrn/icons.css" rel="stylesheet">
 
 <body>
     <div id="wrap">
         <aside id="sidebar">
             <header>
-                <i class="icon-search"></i>
-                <input name="query"></input>
-                <button name="more" class="btn">
-                    <i class="icon-more"></i>
+                <i class="icon icon-search" style="margin-right: 14px;"></i>
+                <input name="query" placeholder="Поиск.." style="margin-right: auto;"></input>
+                <button name="more" style="margin-right: 32px; margin-left: 14px;" class="btn">
+                    <i class="icon icon-more"></i>
                 </button>
                 <button name="add" class="btn">
-                    <i class="icon-add"></i>
+                    <i class="icon icon-add" style="font-size: 21px;"></i>
                 </button>
-                <button name="hide" class="btn">
-                    <i class="icon-cross"></i>
+                <button name="hide" style="display:none;" class="btn">
+                    <i class="icon icon-cross"></i>
                 </button>
             </header>
             <ol id="list-notes">
@@ -63,38 +64,43 @@
 
         <main>
             <header>
-                <button name="back" class="btn">
-                    <i class="icon-arrow-left"></i>
-                </button>
-                <button name="undo" class="btn">
-                    <i class="icon-undo"></i>
-                </button>
-                <button name="redo" class="btn">
-                    <i class="icon-redo"></i>
-                </button>
-                <button name="edit" class="btn">
-                    <i class="icon-edit"></i>
-                </button>
-                <button name="view" class="btn">
-                    <i class="icon-eye"></i>
-                </button>
-                <button name="remove" class="btn">
-                    <i class="icon-trash"></i>
-                </button>
-                <button name="export" class="btn">
-                    <i class="icon-export"></i>
-                </button>
+                <div id="action-btns">
+                    <button name="back" style="display:none;" class="btn">
+                        <i class="icon-arrow-left"></i>
+                    </button>
+                    <button name="undo" style="display:none;" class="btn">
+                        <i class="icon-undo"></i>
+                    </button>
+                    <button name="redo" style="display:none;" class="btn">
+                        <i class="icon-redo"></i>
+                    </button>
+                    <button name="edit" class="btn">
+                        <i class="icon-edit" ></i>
+                    </button>
+                    <button name="view" style="display:none;" class="btn">
+                        <i class="icon-eye"></i>
+                    </button>
+                    <button name="remove" class="btn">
+                        <i class="icon-trash" style="font-size: 23px;"></i>
+                    </button>
+                    <button name="export" class="btn">
+                        <i class="icon-export" style="font-size: 21px;"></i>
+                    </button>
+                </div>
                 
-                <i class="icon-done"></i>
-                <span>Все изменения сохранены</span>
-
+                <div id="status">
+                    <i class="icon-done" style="margin-right: 14px; opacity: .5;"></i>
+                    <span>Все изменения сохранены</span>
+                </div>
+                
                 <button name="full" class="btn">
-                    <i class="icon-full"></i>
+                    <i class="icon-full" style="font-size: 20px;"></i>
                 </button>
             </header>
             <div id="note-content">
-                <h1>Header 1</h1>
-                <p>Lorem ipsum dolor sit amet</p>
+                <h1>Начало работы</h1>
+                <p>Добро пожаловать! Здесь вы можете ознакомиться с функционалом данного блокнота. Вы всегда можете удалить данную запись, нажав по иконке  <i class="icon-trash"></i>  cверху.</p>
+                <p>Любая запись начинается её названия, которое является заголовком. Затем, на следующей строчке следует описание.</p>
             </div>
         </main>
     </div>

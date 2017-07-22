@@ -1,7 +1,45 @@
 @import url('reset.css');
 
-span {
+span, * {
     font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+
+p {
+    line-height: 32px;
+    color: rgba(0, 0, 0, .8);
+    margin-bottom: 32px;
+}
+
+/* Icons */
+
+i {
+    font-size: 22px;
+    opacity: .8;
+}
+
+i:hover {
+    opacity: 1;
+}
+
+button > i {
+    position: relative;
+    top: 2px;
 }
 
 /* Desktops */
@@ -15,7 +53,7 @@ span {
     #wrap {
         margin: 0 auto;
         max-width: 1262px;
-        min-height: 1024px;
+        min-width: 1024px;
     }
 
     #wrap::after {
@@ -42,17 +80,42 @@ span {
         padding: 0 32px;
         margin-bottom: 28px;
         border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    #action-btns button:not(:last-child) {
+        margin-right: 56px;
+    }
+
+    header input {
+        font-size: 18px;
+        color: rgba(0, 0, 0, .35);
+        min-width: 100px; 
+        max-width: 170px;
+        border: none;
+
+    }
+
+     header input:focus {
+         outline: none;
+         color: black;
+     }
+
+     header span {
+         color: rgba(0, 0, 0, .5);
+     }
+
     #list-notes li {
-        border: 1px solid white;
         padding: 20px 32px;
         margin-bottom: 32px;
-        box-sizing: border-box; 
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transition: bottom .2s, left .2s, border-color .2s;
     }
     
     .note-title {
@@ -60,19 +123,15 @@ span {
         display: block;
         margin-bottom: 10px;
         font-size: 18px;
-        transition: color .2s;
     }
 
     .note-description {
         color: rgba(0, 0, 0, .35);
         display: block;
-        transition: color .2s;
     }
 
     #list-notes li:hover {
-        border: 1px solid black;
-        bottom: 6px; /* ИЗМЕНИТЬ НА 6*/
-        left: 6px;
+        outline: 1px solid black;
         cursor: pointer;
     }
 
@@ -84,30 +143,10 @@ span {
         color: black;
     }
 
-    #list-notes li::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border: 1px solid white;
-        transition: right .2s, top .2s, border-color .2s, border-width .2s;
-
-    }
-
-    #list-notes li:hover::before {
-        border: 1px solid rgba(0, 0, 0, .2);
-        right: 6px;
-        top: 6px;
-    }
-
     li.active {
         background: #ECF4FF;
-        border: 1px solid #0080FF;
+        outline: 1px solid #0080FF;
         box-shadow: -6px 6px 0 0 rgba(0, 128, 255, .25);
-        transform: translate(3px, -3px);
     }
 
     li.active .note-title {
@@ -117,8 +156,6 @@ span {
     li.active .note-description {
         color: #84AFD1;
     }
-
-    
 
 }
 
