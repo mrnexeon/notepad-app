@@ -2,6 +2,7 @@
 
 span, * {
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 .btn {
@@ -29,7 +30,7 @@ p {
 /* Icons */
 
 i {
-    font-size: 22px;
+    font-size: 24px !important;
     opacity: .7;
 }
 
