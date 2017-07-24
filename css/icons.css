@@ -1,0 +1,89 @@
+/* Icons */
+
+.icon {
+    display: block;
+}
+
+.icon-add {
+    background: url('../icons/add.png') no-repeat;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-edit {
+    background: url('../icons/edit.png') no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+.icon-trash {
+    background: url('../icons/trash.png') no-repeat;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-share {
+    background: url('../icons/share.png') no-repeat;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-view {
+    background: url('../icons/view.png') no-repeat;
+    width: 30px;
+    height: 18px;
+}
+
+.icon-full {
+    background: url('../icons/full.png') no-repeat;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-more {
+    background: url('../icons/more.png') no-repeat;
+    width: 18px;
+    height: 4px;
+}
+
+.icon-back {
+    background: url('../icons/back.png') no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+.icon-cross {
+    background: url('../icons/cross.png') no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.icon-done {
+    background: url('../icons/done.png') no-repeat;
+    width: 21px;
+    height: 16px;
+}
+
+.icon-undo {
+    background: url('../icons/undo.png') no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+.icon-redo {
+    background: url('../icons/redo.png') no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+.icon-menu {
+    background: url('../icons/menu.png') no-repeat;
+    width: 20px;
+    height: 14px;
+}
+
+.icon-search {
+    background: url('../icons/search.png') no-repeat;
+    width: 22px;
+    height: 22px;
+}
